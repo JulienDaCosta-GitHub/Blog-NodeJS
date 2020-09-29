@@ -1,0 +1,25 @@
+{
+  "name": "blog-nodejs",
+  "version": "1.0.0",
+  "description": "Blog utilisant Node JS",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulienDaCosta-GitHub/Blog-NodeJS.git"
+  },
+  "author": "Julien Da Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulienDaCosta-GitHub/Blog-NodeJS/issues"
+  },
+  "homepage": "https://github.com/JulienDaCosta-GitHub/Blog-NodeJS#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
