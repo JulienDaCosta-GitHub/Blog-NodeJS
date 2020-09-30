@@ -1,20 +1,12 @@
 const { Router } = require('express');
-const Post = require('../db/models/postModel');
+const post = require('./post');
+const auth = require('./auth');
 
 module.exports = function () {
     const app = Router();
 
-    app.get('/', async (req, res) => {
-        const posts = await Post.find();
-        console.log(posts);
-
-        res.render('index', {
-            posts
-        });
-    })
-    app.get('/post', function (req, res) {
-        res.render('show')
-    })
+    post(app);
+    auth(app);
 
     return app;
 }

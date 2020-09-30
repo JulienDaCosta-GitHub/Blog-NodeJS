@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/JulienDaCosta-GitHub/Blog-NodeJS#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "ejs-locals": "^1.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.10.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
     "slug": "^3.3.5"
   },
   "devDependencies": {
