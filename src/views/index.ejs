@@ -9,38 +9,22 @@
 </head>
 <body>
 
-    <h1>Mon blog de Shiba</h1>
-
-    <div class="cadre">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./img/doge.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Ceci est un Shiba</h5>
-              <p class="card-text">Ce célèbre Shiba appelé Doge au regard de trolleur, représente un des memes les plus populaires de notre siècle (en plus il est mignon).</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./img/doge.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Ceci est un Shiba</h5>
-              <p class="card-text">Ce célèbre Shiba appelé Doge au regard de trolleur, représente un des memes les plus populaires de notre siècle (en plus il est mignon).</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./img/doge.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Ceci est un Shiba</h5>
-              <p class="card-text">Ce célèbre Shiba appelé Doge au regard de trolleur, représente un des memes les plus populaires de notre siècle (en plus il est mignon).</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div>
-
-</body>
+  <h1>Mon super blog</h1>
+  <div class="container">
+  
+      <% posts.forEach(function (post) { %>
+          <a href="/post/<%= post.slug %>">
+              <div class="card">
+                  <img src="<%= post.image %>" alt="">
+                  <div class="card-details">
+                      <h2><%= post.title %></h2>
+                      <p class="text-secondary"><%= post.description %></p>
+                  </div>
+              </div>
+          </a>
+      <% }) %>
+  </div>
+  </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
