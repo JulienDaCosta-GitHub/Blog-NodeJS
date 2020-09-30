@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const PostSeeder = require('./src/db/seed')
+const PostSeeder = require('./src/db/seed/posts.seeder')
 
 const mongoURL = 'mongodb://localhost/blog';
 
